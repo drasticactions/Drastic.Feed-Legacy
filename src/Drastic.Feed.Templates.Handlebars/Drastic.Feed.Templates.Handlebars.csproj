@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<WarningsAsErrors>nullable</WarningsAsErrors>
+	</PropertyGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Drastic.Feed.Rss\Drastic.Feed.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="Handlebars.Net" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Handlebars.Net" Version="2.1.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Templates\feeditem.html.hbs" />
+	</ItemGroup>
+</Project>

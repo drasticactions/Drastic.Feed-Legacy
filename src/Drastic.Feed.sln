@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed", "Drastic.Feed.Rss\Drastic.Feed.csproj", "{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Templates.Handlebars", "Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj", "{1C0ED7FB-7497-4757-B283-59DCFC5785F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Parser.SmartReader", "Drastic.Feed.Parser.SmartReader\Drastic.Feed.Parser.SmartReader.csproj", "{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Service.GoogleNews", "Drastic.Feed.Service.GoogleNews\Drastic.Feed.Service.GoogleNews.csproj", "{85AFB6C7-0394-400E-AC94-EB645AC0150B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Rss.FeedReader", "Drastic.Feed.Rss.FeedReader\Drastic.Feed.Rss.FeedReader.csproj", "{F232CDA5-E2BF-4875-8209-CA4A73509B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Database.LiteDB", "Drastic.Feed.Database.LiteDB\Drastic.Feed.Database.LiteDB.csproj", "{A9F9B34C-EC7D-4ABB-8296-00675C585943}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{38319A84-9D75-4ABC-9FFF-BFAFC768866E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Rss.FeedReader.Tests", "..\tests\Drastic.Feed.Rss.FeedReader.Tests\Drastic.Feed.Rss.FeedReader.Tests.csproj", "{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Service.GoogleNews.Tests", "..\tests\Drastic.Feed.Service.GoogleNews.Tests\Drastic.Feed.Service.GoogleNews.Tests.csproj", "{725C4FB0-4F27-4AB3-B013-F8173D718C8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Templates.Handlebars.Tests", "..\tests\Drastic.Feed.Templates.Handlebars.Tests\Drastic.Feed.Templates.Handlebars.Tests.csproj", "{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0ED7FB-7497-4757-B283-59DCFC5785F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0ED7FB-7497-4757-B283-59DCFC5785F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0ED7FB-7497-4757-B283-59DCFC5785F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0ED7FB-7497-4757-B283-59DCFC5785F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85AFB6C7-0394-400E-AC94-EB645AC0150B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AFB6C7-0394-400E-AC94-EB645AC0150B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85AFB6C7-0394-400E-AC94-EB645AC0150B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85AFB6C7-0394-400E-AC94-EB645AC0150B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725C4FB0-4F27-4AB3-B013-F8173D718C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725C4FB0-4F27-4AB3-B013-F8173D718C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725C4FB0-4F27-4AB3-B013-F8173D718C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725C4FB0-4F27-4AB3-B013-F8173D718C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4} = {38319A84-9D75-4ABC-9FFF-BFAFC768866E}
+		{725C4FB0-4F27-4AB3-B013-F8173D718C8D} = {38319A84-9D75-4ABC-9FFF-BFAFC768866E}
+		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3} = {38319A84-9D75-4ABC-9FFF-BFAFC768866E}
+	EndGlobalSection
+EndGlobal
