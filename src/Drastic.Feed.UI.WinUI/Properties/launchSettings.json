@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Drastic.Feed.UI.WinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Drastic.Feed.UI.WinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -4,7 +4,7 @@
 
 using System.Reflection;
 
-namespace Drastic.Feed.UI
+namespace Drastic.Feed
 {
     public static class Utilities
     {
@@ -26,10 +26,10 @@ namespace Drastic.Feed.UI
         /// </summary>
         /// <param name="fileName">Filename.</param>
         /// <returns>Stream.</returns>
-        public static Stream? GetResourceFileContent(string fileName)
+        internal static Stream? GetResourceFileContent(string fileName)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = "Drastic.Feed.UI." + fileName;
+            var resourceName = "Drastic.Feed." + fileName;
             if (assembly is null)
             {
                 return null;

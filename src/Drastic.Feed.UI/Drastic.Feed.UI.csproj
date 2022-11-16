@@ -12,10 +12,6 @@
 		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
 	</ItemGroup>
 	<ItemGroup>
-	  <EmbeddedResource Include="Icon\dotnet_bot.png" />
-	  <EmbeddedResource Include="Icon\favicon.ico" />
-	</ItemGroup>
-	<ItemGroup>
 	  <Compile Update="Translations\Common.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>

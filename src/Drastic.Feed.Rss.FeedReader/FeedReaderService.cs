@@ -39,6 +39,10 @@ namespace Drastic.Feed.Rss.FeedReader
                 {
                     item.ImageCache = await this.client.GetByteArrayAsync(item.ImageUri);
                 }
+                else if (item.ImageCache is null)
+                {
+                    item.ImageCache = Utilities.GetPlaceholderIcon();
+                }
 
                 var feedItemList = new List<FeedItem>();
 

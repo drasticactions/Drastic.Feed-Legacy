@@ -7,6 +7,14 @@
 		<WarningsAsErrors>nullable</WarningsAsErrors>
 	</PropertyGroup>
 	<ItemGroup>
+	  <None Remove="Icon\dotnet_bot.png" />
+	  <None Remove="Icon\favicon.ico" />
+	</ItemGroup>
+	<ItemGroup>
 		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="Icon\dotnet_bot.png" />
+	  <EmbeddedResource Include="Icon\favicon.ico" />
 	</ItemGroup>
 </Project>
