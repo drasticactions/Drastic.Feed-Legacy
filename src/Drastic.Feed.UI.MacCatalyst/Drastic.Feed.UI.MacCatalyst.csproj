@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-maccatalyst</TargetFramework>
+		<RuntimeIdentifier>maccatalyst-x64</RuntimeIdentifier>
+		<OutputType>Exe</OutputType>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>true</ImplicitUsings>
+		<SupportedOSPlatformVersion>14.2</SupportedOSPlatformVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Drastic.Feed.Database.LiteDB\Drastic.Feed.Database.LiteDB.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.Parser.SmartReader\Drastic.Feed.Parser.SmartReader.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.Rss.FeedReader\Drastic.Feed.Rss.FeedReader.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.Service.GoogleNews\Drastic.Feed.Service.GoogleNews.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.UI.Mac\Drastic.Feed.UI.Mac.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.UI.UIKit\Drastic.Feed.UI.UIKit.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.UI\Drastic.Feed.UI.csproj" />
+		<ProjectReference Include="..\Drastic.Feed.Rss\Drastic.Feed.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0-preview1" />
+		<PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon16.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon16.png</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon1024.png</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon512.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon512.png</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon128.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon128.png</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon64.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon64.png</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Contents.json">
+			<Link>Assets.xcassets\AppIcon.appiconset\Contents.json</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon256.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon256.png</Link>
+		</ImageAsset>
+		<ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon32.png">
+			<Link>Assets.xcassets\AppIcon.appiconset\Icon32.png</Link>
+		</ImageAsset>
+	</ItemGroup>
+	<ItemGroup>
+		<InterfaceDefinition Update="Resources\LaunchScreen.xib">
+			<Link>Resources\LaunchScreen.xib</Link>
+		</InterfaceDefinition>
+	</ItemGroup>
+</Project>
