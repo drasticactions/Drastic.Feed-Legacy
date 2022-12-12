@@ -2,8 +2,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
 		<IsPackable>false</IsPackable>
 	</PropertyGroup>
 	<ItemGroup>
@@ -15,8 +13,5 @@
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj" />
 		<ProjectReference Include="..\..\src\Drastic.Feed.Rss\Drastic.Feed.csproj" />
-	</ItemGroup>
-	<ItemGroup>
-		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
 	</ItemGroup>
 </Project>

@@ -5,8 +5,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<WarningsAsErrors>nullable</WarningsAsErrors>
+		<IsPackable>true</IsPackable>
+		<Description>
+			Drastic.Feed.Rss contains the core interfaces for interacting with RSS feeds within Drastic.Feed.
+			This library does not contain any implementations.
+		</Description>
 	</PropertyGroup>
-	<ItemGroup>
-		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
-	</ItemGroup>
 </Project>

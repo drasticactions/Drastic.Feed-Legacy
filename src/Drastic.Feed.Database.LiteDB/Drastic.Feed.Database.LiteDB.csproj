@@ -2,17 +2,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<WarningsAsErrors>nullable</WarningsAsErrors>
+		<IsPackable>true</IsPackable>
+		<Description>
+			Drastic.Feed.Database.LiteDB is a database implementation for Drastic.Feed using LiteDB.
+			This can be used to store feed information taken from Drastic.Feed.
+		</Description>
 	</PropertyGroup>
-	<ItemGroup>
-		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
-	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Drastic.Feed.Rss\Drastic.Feed.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="LiteDB" Version="5.0.11" />
+		<PackageReference Include="LiteDB" Version="5.0.13" />
 	</ItemGroup>
 </Project>

@@ -2,13 +2,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<WarningsAsErrors>nullable</WarningsAsErrors>
+		<IsPackable>true</IsPackable>
+		<Description>
+			Drastic.Feed.Service.GoogleNews is an implementation of Drastic.Feed.Service using Google News as a service.
+			This can be used to get feeds from Google News.
+		</Description>
 	</PropertyGroup>
-	<ItemGroup>
-		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
-	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Drastic.Feed.Rss\Drastic.Feed.csproj" />
 	</ItemGroup>
