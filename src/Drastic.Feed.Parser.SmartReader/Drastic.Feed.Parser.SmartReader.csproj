@@ -3,6 +3,9 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<IsPackable>true</IsPackable>
+		<Description>
+			Drastic.Feed.Parser.SmartReader is an implementation of IArticleParserService for Drastic.Feed, using SmartReader.
+		</Description>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Drastic.Feed.Rss\Drastic.Feed.csproj" />

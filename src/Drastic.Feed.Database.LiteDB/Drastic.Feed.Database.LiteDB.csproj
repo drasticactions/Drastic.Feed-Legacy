@@ -4,8 +4,7 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<IsPackable>true</IsPackable>
 		<Description>
-			Drastic.Feed.Database.LiteDB is a database implementation for Drastic.Feed using LiteDB.
-			This can be used to store feed information taken from Drastic.Feed.
+			Drastic.Feed.Database.LiteDB is a database implementation for Drastic.Feed using LiteDB. This can be used to store feed information taken from Drastic.Feed.
 		</Description>
 	</PropertyGroup>
 	<ItemGroup>
