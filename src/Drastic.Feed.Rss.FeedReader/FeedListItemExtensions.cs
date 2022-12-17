@@ -30,7 +30,6 @@ namespace Drastic.Feed.Rss.FeedReader
                 Description = feed.Description,
                 Language = feed.Language,
                 LastUpdatedDate = feed.LastUpdatedDate,
-                LastUpdatedDateString = feed.LastUpdatedDateString,
             };
         }
 

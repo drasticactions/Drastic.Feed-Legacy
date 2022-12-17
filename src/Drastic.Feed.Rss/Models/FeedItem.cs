@@ -11,20 +11,14 @@ namespace Drastic.Feed.Models
     /// <summary>
     /// Feed Item.
     /// </summary>
-    public class FeedItem : INotifyPropertyChanged
+    public class FeedItem
     {
-        private bool isRead;
-        private bool isFavorite;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="FeedItem"/> class.
         /// </summary>
         public FeedItem()
         {
         }
-
-        /// <inheritdoc/>
-        public event PropertyChangedEventHandler? PropertyChanged;
 
         /// <summary>
         /// Gets or sets the id.
@@ -120,54 +114,6 @@ namespace Drastic.Feed.Models
         {
             get;
             set;
-        }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the feed is favorited.
-        /// </summary>
-        public bool IsFavorite
-        {
-            get { return this.isFavorite; }
-            set { this.SetProperty(ref this.isFavorite, value); }
-        }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the feed item has been read.
-        /// </summary>
-        public bool IsRead
-        {
-            get { return this.isRead; }
-            set { this.SetProperty(ref this.isRead, value); }
-        }
-
-#pragma warning disable SA1600 // Elements should be documented
-        protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action? onChanged = null)
-#pragma warning restore SA1600 // Elements should be documented
-        {
-            if (EqualityComparer<T>.Default.Equals(backingStore, value))
-            {
-                return false;
-            }
-
-            backingStore = value;
-            onChanged?.Invoke();
-            this.OnPropertyChanged(propertyName);
-            return true;
-        }
-
-        /// <summary>
-        /// On Property Changed.
-        /// </summary>
-        /// <param name="propertyName">Name of the property.</param>
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            var changed = this.PropertyChanged;
-            if (changed == null)
-            {
-                return;
-            }
-
-            changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

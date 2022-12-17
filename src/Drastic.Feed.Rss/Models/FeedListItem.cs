@@ -42,11 +42,6 @@ namespace Drastic.Feed.Models
         public DateTime? LastUpdatedDate { get; set; }
 
         /// <summary>
-        /// Gets or sets the last updated date string.
-        /// </summary>
-        public string? LastUpdatedDateString { get; set; }
-
-        /// <summary>
         /// Gets or sets the image uri.
         /// </summary>
         public Uri? ImageUri { get; set; }
@@ -65,10 +60,5 @@ namespace Drastic.Feed.Models
         /// Gets or sets the Feed Link.
         /// </summary>
         public string? Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the feed is favorited.
-        /// </summary>
-        public bool IsFavorite { get; set; }
     }
 }
