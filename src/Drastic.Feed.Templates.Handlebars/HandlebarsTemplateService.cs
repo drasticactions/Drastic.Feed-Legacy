@@ -53,7 +53,7 @@ namespace Drastic.Feed.Templates.Handlebars
                 item.Html = await this.articleParser.ParseFeedItem(item);
             }
 
-            return item.Html = this.feedItemTemplate.Invoke(new { FeedListItem = feedListItem, FeedItem = item, Image = Convert.ToBase64String(feedListItem.ImageCache ?? new byte[0]) });
+            return item.Html = this.feedItemTemplate.Invoke(new { FeedListItem = feedListItem, FeedItem = item, Image = Convert.ToBase64String(feedListItem.Image ?? new byte[0]) });
         }
 
         private static string GetResourceFileContentAsString(string fileName)

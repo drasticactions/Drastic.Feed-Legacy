@@ -63,15 +63,6 @@ namespace Drastic.Feed.Models
         }
 
         /// <summary>
-        /// Gets or sets The publishing date as string.
-        /// </summary>
-        public string? PublishingDateString
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
         /// Gets or sets The published date as datetime.
         /// </summary>
         public DateTime? PublishingDate

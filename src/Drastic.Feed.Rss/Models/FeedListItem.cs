@@ -42,7 +42,7 @@ namespace Drastic.Feed.Models
         public DateTime? LastUpdatedDate { get; set; }
 
         /// <summary>
-        /// Gets or sets the image uri.
+        /// Gets or sets the feed image uri.
         /// </summary>
         public Uri? ImageUri { get; set; }
 
@@ -52,9 +52,9 @@ namespace Drastic.Feed.Models
         public Uri? Uri { get; set; }
 
         /// <summary>
-        /// Gets or sets the image cache.
+        /// Gets or sets the feed image.
         /// </summary>
-        public byte[]? ImageCache { get; set; }
+        public byte[]? Image { get; set; }
 
         /// <summary>
         /// Gets or sets the Feed Link.

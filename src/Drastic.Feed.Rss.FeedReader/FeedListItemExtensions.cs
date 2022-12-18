@@ -52,7 +52,6 @@ namespace Drastic.Feed.Rss.FeedReader
                 PublishingDate = item.PublishingDate,
                 Author = item.Author,
                 Content = item.Content,
-                PublishingDateString = item.PublishingDateString,
                 ImageUrl = imageUrl,
             };
         }

@@ -35,9 +35,9 @@ namespace Drastic.Feed.Rss.FeedReader
             {
                 var item = feed.ToFeedListItem(feedUri);
 
-                if (item.ImageCache is null && item.ImageUri is not null)
+                if (item.Image is null && item.ImageUri is not null)
                 {
-                    item.ImageCache = await this.client.GetByteArrayAsync(item.ImageUri);
+                    item.Image = await this.client.GetByteArrayAsync(item.ImageUri);
                 }
 
                 var feedItemList = new List<FeedItem>();
