@@ -39,7 +39,6 @@ namespace Drastic.Feed.Templates.Handlebars.Tests
             var feedItem = new FeedItem();
             feedItem.Title = "Test Item";
             feedItem.PublishingDate = DateTime.UtcNow;
-            feedItem.PublishingDateString = feedItem.PublishingDate.ToString();
             feedItem.Author = "Test Author";
             feedItem.Content = @"<b>Test</b>";
             feedItem.Description = "Test Description";
