@@ -14,19 +14,17 @@ namespace Drastic.Feed.Service.GoogleNews
     /// </summary>
     public class GoogleNewsService
     {
-        private CultureInfo? culture;
         private IFeedService feedService;
         private string mainFeedUri = "https://news.google.com/rss?gl={1}&hl={0}&ceid={1}:{0}";
         private string sectiondUri = "https://news.google.com/news/rss/headlines/section/topic/{0}?ned={2}&hl={1}";
 
-        public GoogleNewsService(IFeedService service, CultureInfo? culture = default)
+        public GoogleNewsService(IFeedService service)
         {
             if (service is null)
             {
                 throw new ArgumentNullException(nameof(service));
             }
 
-            this.culture = culture;
             this.feedService = service;
         }
 

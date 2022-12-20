@@ -2,10 +2,9 @@
 // Copyright (c) Drastic Actions. All rights reserved.
 // </copyright>
 
-using System;
 using Drastic.Feed.Models;
 
-namespace Drastic.Feed.Services
+namespace Drastic.Feed.App.Services
 {
     /// <summary>
     /// Database Service.

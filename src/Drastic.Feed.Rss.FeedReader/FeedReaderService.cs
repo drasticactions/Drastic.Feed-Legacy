@@ -20,17 +20,25 @@ namespace Drastic.Feed.Rss.FeedReader
         /// <summary>
         /// Initializes a new instance of the <see cref="FeedReaderService"/> class.
         /// </summary>
-        public FeedReaderService()
+        /// <param name="client">Optional HttpClient for reading the RSS and image data.</param>
+        /// <param name="parser">Optional Parser for feed content.</param>
+        public FeedReaderService(HttpClient? client = default, HtmlParser? parser = default)
         {
-            this.client = new HttpClient();
-            this.parser = new HtmlParser();
+            this.client = client ?? new HttpClient();
+            this.parser = parser ?? new HtmlParser();
         }
 
         /// <inheritdoc/>
         public async Task<(FeedListItem? FeedList, IList<FeedItem>? FeedItemList)> ReadFeedAsync(string feedUri, CancellationToken? token = default)
         {
             var cancelationToken = token ?? CancellationToken.None;
-            var feed = await CodeHollow.FeedReader.FeedReader.ReadAsync(feedUri, cancelationToken);
+
+            var result = await this.client.GetStringAsync(feedUri);
+            cancelationToken.ThrowIfCancellationRequested();
+
+            var feed = CodeHollow.FeedReader.FeedReader.ReadFromString(result);
+            cancelationToken.ThrowIfCancellationRequested();
+
             if (feed is not null)
             {
                 var item = feed.ToFeedListItem(feedUri);
@@ -38,6 +46,7 @@ namespace Drastic.Feed.Rss.FeedReader
                 if (item.Image is null && item.ImageUri is not null)
                 {
                     item.Image = await this.client.GetByteArrayAsync(item.ImageUri);
+                    cancelationToken.ThrowIfCancellationRequested();
                 }
 
                 var feedItemList = new List<FeedItem>();

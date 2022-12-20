@@ -1,35 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33209.295
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed", "Drastic.Feed\Drastic.Feed.csproj", "{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed", "Drastic.Feed\Drastic.Feed.csproj", "{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Templates.Handlebars", "Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj", "{1C0ED7FB-7497-4757-B283-59DCFC5785F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Templates.Handlebars", "Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj", "{1C0ED7FB-7497-4757-B283-59DCFC5785F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Parser.SmartReader", "Drastic.Feed.Parser.SmartReader\Drastic.Feed.Parser.SmartReader.csproj", "{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Parser.SmartReader", "Drastic.Feed.Parser.SmartReader\Drastic.Feed.Parser.SmartReader.csproj", "{166223F2-AF8E-4DEB-B90A-B0316D4D3E60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Service.GoogleNews", "Drastic.Feed.Service.GoogleNews\Drastic.Feed.Service.GoogleNews.csproj", "{85AFB6C7-0394-400E-AC94-EB645AC0150B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Service.GoogleNews", "Drastic.Feed.Service.GoogleNews\Drastic.Feed.Service.GoogleNews.csproj", "{85AFB6C7-0394-400E-AC94-EB645AC0150B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Rss.FeedReader", "Drastic.Feed.Rss.FeedReader\Drastic.Feed.Rss.FeedReader.csproj", "{F232CDA5-E2BF-4875-8209-CA4A73509B3C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Database.LiteDB", "Drastic.Feed.Database.LiteDB\Drastic.Feed.Database.LiteDB.csproj", "{A9F9B34C-EC7D-4ABB-8296-00675C585943}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Rss.FeedReader", "Drastic.Feed.Rss.FeedReader\Drastic.Feed.Rss.FeedReader.csproj", "{F232CDA5-E2BF-4875-8209-CA4A73509B3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{38319A84-9D75-4ABC-9FFF-BFAFC768866E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Rss.FeedReader.Tests", "..\tests\Drastic.Feed.Rss.FeedReader.Tests\Drastic.Feed.Rss.FeedReader.Tests.csproj", "{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Rss.FeedReader.Tests", "..\tests\Drastic.Feed.Rss.FeedReader.Tests\Drastic.Feed.Rss.FeedReader.Tests.csproj", "{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Service.GoogleNews.Tests", "..\tests\Drastic.Feed.Service.GoogleNews.Tests\Drastic.Feed.Service.GoogleNews.Tests.csproj", "{725C4FB0-4F27-4AB3-B013-F8173D718C8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Service.GoogleNews.Tests", "..\tests\Drastic.Feed.Service.GoogleNews.Tests\Drastic.Feed.Service.GoogleNews.Tests.csproj", "{725C4FB0-4F27-4AB3-B013-F8173D718C8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Templates.Handlebars.Tests", "..\tests\Drastic.Feed.Templates.Handlebars.Tests\Drastic.Feed.Templates.Handlebars.Tests.csproj", "{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Templates.Handlebars.Tests", "..\tests\Drastic.Feed.Templates.Handlebars.Tests\Drastic.Feed.Templates.Handlebars.Tests.csproj", "{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{C7CD93BB-C10C-4F8F-9A5B-033EF18DFEE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.App", "..\app\Drastic.Feed.App\Drastic.Feed.App.csproj", "{7E002487-9658-4066-B457-5FBF7EAFC7E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Database.LiteDB", "..\app\Drastic.Feed.App.Database.LiteDB\Drastic.Feed.Database.LiteDB.csproj", "{205E1A3B-0EEB-4C51-B374-9629175613E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -52,10 +53,6 @@ Global
 		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F232CDA5-E2BF-4875-8209-CA4A73509B3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9F9B34C-EC7D-4ABB-8296-00675C585943}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,10 +65,26 @@ Global
 		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E002487-9658-4066-B457-5FBF7EAFC7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E002487-9658-4066-B457-5FBF7EAFC7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E002487-9658-4066-B457-5FBF7EAFC7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E002487-9658-4066-B457-5FBF7EAFC7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205E1A3B-0EEB-4C51-B374-9629175613E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205E1A3B-0EEB-4C51-B374-9629175613E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205E1A3B-0EEB-4C51-B374-9629175613E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205E1A3B-0EEB-4C51-B374-9629175613E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0AA6EA3D-EB13-43D1-AA54-BC6F8BBA7FC4} = {38319A84-9D75-4ABC-9FFF-BFAFC768866E}
 		{725C4FB0-4F27-4AB3-B013-F8173D718C8D} = {38319A84-9D75-4ABC-9FFF-BFAFC768866E}
 		{09822FC1-3567-4025-BDAF-B1AB7DBD65B3} = {38319A84-9D75-4ABC-9FFF-BFAFC768866E}
+		{7E002487-9658-4066-B457-5FBF7EAFC7E7} = {C7CD93BB-C10C-4F8F-9A5B-033EF18DFEE2}
+		{205E1A3B-0EEB-4C51-B374-9629175613E5} = {C7CD93BB-C10C-4F8F-9A5B-033EF18DFEE2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88FF2529-7473-427D-90D4-E4276560F647}
 	EndGlobalSection
 EndGlobal

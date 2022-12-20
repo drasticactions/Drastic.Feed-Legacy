@@ -17,14 +17,17 @@ namespace Drastic.Feed.Templates.Handlebars
     {
         private HandlebarsTemplate<object, object> feedItemTemplate;
         private IArticleParserService? articleParser;
+        private byte[] placeholderImage;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HandlebarsTemplateService"/> class.
         /// This uses the default template HTML.
         /// </summary>
         /// <param name="articleParser">Optional Article Parser.</param>
-        public HandlebarsTemplateService(IArticleParserService? articleParser = default)
+        /// <param name="placeholderImage">Optional placeholder image. Used if the image from <see cref="FeedListItem.Image"/> is empty.</param>
+        public HandlebarsTemplateService(IArticleParserService? articleParser = default, byte[]? placeholderImage = default)
         {
+            this.placeholderImage = placeholderImage ?? new byte[0];
             this.articleParser = articleParser;
             this.feedItemTemplate = HandlebarsDotNet.Handlebars.Compile(HandlebarsTemplateService.GetResourceFileContentAsString("Templates.feeditem.html.hbs"));
         }
@@ -34,8 +37,10 @@ namespace Drastic.Feed.Templates.Handlebars
         /// </summary>
         /// <param name="templateHtml">Handlebars Template HTML.</param>
         /// <param name="articleParser">Optional Article Parser.</param>
-        public HandlebarsTemplateService(string templateHtml, IArticleParserService? articleParser = default)
+        /// <param name="placeholderImage">Optional placeholder image. Used if the image from <see cref="FeedListItem.Image"/> is empty.</param>
+        public HandlebarsTemplateService(string templateHtml, IArticleParserService? articleParser = default, byte[]? placeholderImage = default)
         {
+            this.placeholderImage = placeholderImage ?? new byte[0];
             this.articleParser = articleParser;
             this.feedItemTemplate = HandlebarsDotNet.Handlebars.Compile(templateHtml);
         }
@@ -53,7 +58,7 @@ namespace Drastic.Feed.Templates.Handlebars
                 item.Html = await this.articleParser.ParseFeedItem(item);
             }
 
-            return item.Html = this.feedItemTemplate.Invoke(new { FeedListItem = feedListItem, FeedItem = item, Image = Convert.ToBase64String(feedListItem.Image ?? new byte[0]) });
+            return item.Html = this.feedItemTemplate.Invoke(new { FeedListItem = feedListItem, FeedItem = item, Image = Convert.ToBase64String(feedListItem.Image ?? this.placeholderImage) });
         }
 
         private static string GetResourceFileContentAsString(string fileName)
