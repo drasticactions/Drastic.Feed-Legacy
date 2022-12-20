@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed", "Drastic.Feed.Rss\Drastic.Feed.csproj", "{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed", "Drastic.Feed\Drastic.Feed.csproj", "{BE603048-8BB2-4E01-AA77-23FABE2EF0A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drastic.Feed.Templates.Handlebars", "Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj", "{1C0ED7FB-7497-4757-B283-59DCFC5785F2}"
 EndProject

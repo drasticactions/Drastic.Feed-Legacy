@@ -7,21 +7,13 @@
 		<Company>Drastic Actions</Company>
 		<Copyright>Copyright (C) Drastic Actions</Copyright>
 		<IsPackable>false</IsPackable>
+		<Version>1.0.10</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="" Visible="false" />
 		<None Include="$(MSBuildThisFileDirectory)favicon.png" Pack="true" PackagePath="" Visible="false" />
 	</ItemGroup>
-
-	<Target Name="SetVersion" DependsOnTargets="GitInfo" BeforeTargets="PrepareForBuild">
-		<PropertyGroup>
-			<Version>$(GitSemVerMajor).$(GitSemVerMinor).$(GitSemVerPatch)$(GitSemVerDashLabel)+$(GitBranch).$(GitCommit)</Version>
-			<PackageVersion>$(Version)</PackageVersion>
-		</PropertyGroup>
-
-		<Message Importance="High" Text="Building version $(Version)" />
-	</Target>
 
 	<ItemGroup>
 		<AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" Link="stylecop.json" />
@@ -46,10 +38,6 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
-		<PackageReference Include="GitInfo" Version="2.3.0">
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-			<PrivateAssets>all</PrivateAssets>
-		</PackageReference>
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>

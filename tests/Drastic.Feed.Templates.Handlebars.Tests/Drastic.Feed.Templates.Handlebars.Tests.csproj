@@ -12,6 +12,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\Drastic.Feed.Templates.Handlebars\Drastic.Feed.Templates.Handlebars.csproj" />
-		<ProjectReference Include="..\..\src\Drastic.Feed.Rss\Drastic.Feed.csproj" />
+		<ProjectReference Include="..\..\src\Drastic.Feed\Drastic.Feed.csproj" />
 	</ItemGroup>
 </Project>

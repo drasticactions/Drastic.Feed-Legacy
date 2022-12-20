@@ -9,7 +9,7 @@
 		</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\Drastic.Feed.Rss\Drastic.Feed.csproj" />
+		<ProjectReference Include="..\Drastic.Feed\Drastic.Feed.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Remove="Handlebars.Net" />
