@@ -6,12 +6,12 @@ using System.Reflection;
 using Drastic.Feed.Models;
 using LiteDB;
 
-namespace Drastic.Feed.Database.LiteDB
+namespace Drastic.Feed.App.Services.Database
 {
     /// <summary>
     /// Database Context.
     /// </summary>
-    public class LiteDBDatabaseContext : App.Services.IDatabaseService
+    public class LiteDBDatabaseContext : IDatabaseService
     {
         private const string FeedsCollection = "Feeds";
         private const string FeedItemsCollection = "FeedItems";

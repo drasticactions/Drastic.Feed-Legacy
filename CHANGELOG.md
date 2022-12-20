@@ -1,3 +1,8 @@
+### v1.0.10 (20-Dec-2022)
+- More API changes
+ - Created `Drastic.Feed.App`. This is a new base library for handling services that could be used by end-user applications. They are not required for just reading feeds, so I moved them out of the base `Drastic.Feed` library.
+ - With this, I have also moved `Drastic.Feed.Database.LiteDB` to `Drastic.Feed.App.Database.LiteDB` and adjusted the underlying namespace to `Drastic.Feed.App.Services.Database`. The package id remains the same.
+
 ### v1.0.9 (18-Dec-2022)
 - Clean up more API references to condence them. 
 

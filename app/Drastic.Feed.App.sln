@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{033B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed", "..\src\Drastic.Feed\Drastic.Feed.csproj", "{C6DCB1C9-5DD1-4A6A-B4B1-C9C34BBEFE47}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.Database.LiteDB", "Drastic.Feed.App.Database.LiteDB\Drastic.Feed.Database.LiteDB.csproj", "{90EBD095-BD4B-44A1-83AE-CDDA8A571680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drastic.Feed.App.Database.LiteDB", "Drastic.Feed.App.Database.LiteDB\Drastic.Feed.App.Database.LiteDB.csproj", "{E1C299F9-EEAC-4556-9E2A-412224D0417D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{C6DCB1C9-5DD1-4A6A-B4B1-C9C34BBEFE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6DCB1C9-5DD1-4A6A-B4B1-C9C34BBEFE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6DCB1C9-5DD1-4A6A-B4B1-C9C34BBEFE47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90EBD095-BD4B-44A1-83AE-CDDA8A571680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90EBD095-BD4B-44A1-83AE-CDDA8A571680}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90EBD095-BD4B-44A1-83AE-CDDA8A571680}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90EBD095-BD4B-44A1-83AE-CDDA8A571680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C299F9-EEAC-4556-9E2A-412224D0417D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C299F9-EEAC-4556-9E2A-412224D0417D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C299F9-EEAC-4556-9E2A-412224D0417D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C299F9-EEAC-4556-9E2A-412224D0417D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
